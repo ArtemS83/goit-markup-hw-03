@@ -23,6 +23,8 @@ body {
 /*                                    Общие сбросы свойств */
 /* Убираем точки в списках */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* Убираем подчеркивание в ссылках */
@@ -32,6 +34,17 @@ body {
 /* Убираем наклонность текста */
 .address {
   font-style: normal;
+}
+/*                                   Наш div.container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Линия и фон для видимости */
+  outline: 1px solid red;
+  /* background-color: yellowgreen; */
 }
 /*                                       Шапка сайта */
 
@@ -48,6 +61,8 @@ body {
 }
 /* Логотип */
 .logo {
+  margin-right: 85px;
+
   font-family: var(--font-logo);
   font-weight: 700;
   font-size: 26px;
@@ -61,6 +76,10 @@ body {
 }
 /* Текст */
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -73,14 +92,42 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+}
+.contakt-list {
+  display: flex;
+}
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contakt-list .item:not(:first-child) {
+  margin-left: 30px;
+}
+
 /*                                            Студия */
 
 /* Hero */
-/* Зададим временный фон,чтобы было видно текст */
 .hero {
+  text-align: center;
+  /* Зададим временный фон,чтобы было видно текст */
   background-color: var(--text-color);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -91,10 +138,20 @@ body {
   color: var(--main-write-color);
 }
 .hero-button {
+  display: inline-block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
+
   letter-spacing: 0.06em;
 
   background-color: var(--hover-color);
@@ -168,6 +225,7 @@ body {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  text-align: center;
 
   background-color: var(--background-color);
   color: var(--main-title-color);

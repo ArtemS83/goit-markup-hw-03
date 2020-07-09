@@ -8,43 +8,48 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header>
-      <nav class="nav">
-        <a class="logo link" href="./index.html" lang="en"
-          ><span class="logo-web">Web</span>
-          <span class="black-studio">Studio</span></a
-        >
-        <ul class="list">
-          <li>
-            <a class="nav-link current link" href="./index.html">Студия</a>
-          </li>
-          <li>
-            <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="nav-link link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="address contakt">
-        <ul class="list">
-          <li>
-            <a class="contakt-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contakt-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav class="nav">
+          <a class="logo link" href="./index.html" lang="en"
+            ><span class="logo-web">Web</span>
+            <span class="black-studio">Studio</span></a
+          >
+          <ul class="nav-list list">
+            <li class="item">
+              <a class="nav-link current link" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li>
+              <a class="nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address contakt">
+          <ul class="contakt-list list">
+            <li class="item">
+              <a class="contakt-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a class="contakt-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- Оснавная часть -->
     <main>
@@ -54,7 +59,7 @@
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button">Заказать услугу</button>
+        <a class="hero-button link" href="">Заказать услугу</a>
       </section>
       <!-- О нас секция -->
       <section class="about">
