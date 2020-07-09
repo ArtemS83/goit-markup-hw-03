@@ -1,0 +1,228 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --font-logo: 'Raleway', sans-serif;
+  --main-title-color: #212121;
+  --main-write-color: #ffffff;
+  --main-background-color: #ffffff;
+  --text-color: #757575;
+  --hover-color: #2196f3;
+  --background-color: #f5f4fa;
+}
+
+/* Цвет вторичный в футере  на иконках rgba(255, 255, 255, 0.6); */
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+
+  background-color: var(--main-background-color);
+}
+/*                                    Общие сбросы свойств */
+/* Убираем точки в списках */
+.list {
+  list-style: none;
+}
+/* Убираем подчеркивание в ссылках */
+.link {
+  text-decoration: none;
+}
+/* Убираем наклонность текста */
+.address {
+  font-style: normal;
+}
+/*                                       Шапка сайта */
+
+/* "Эффект присутствия на странице */
+.nav-link.current {
+  color: var(--hover-color);
+}
+/* Accent эффект */
+.nav-link:hover,
+.nav-link:focus,
+.contakt-link:hover,
+.contakt-link:focus {
+  color: var(--hover-color);
+}
+/* Логотип */
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-web {
+  color: #2196f3;
+}
+.black-studio {
+  color: #000000;
+}
+/* Текст */
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+.contakt-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+/*                                            Студия */
+
+/* Hero */
+/* Зададим временный фон,чтобы было видно текст */
+.hero {
+  background-color: var(--text-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-write-color);
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--hover-color);
+  color: var(--main-write-color);
+}
+/* Секция О нас */
+.about-name {
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.about-description {
+  line-height: 1.71;
+  color: var(--text-color);
+}
+/* Чем занимаемся секция */
+
+.offer-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.offer-name {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Зададим временный фон,чтобы было видно текст */
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--main-write-color);
+}
+/* Секция Наша команда */
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--text-color);
+}
+/* Секция Постоянные клиенты */
+.customers-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/*                                         Секция Портфолио */
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--hover-color);
+  color: var(--main-write-color);
+}
+.filter-button.current {
+  background-color: var(--hover-color);
+  color: var(--main-write-color);
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  background-color: var(--background-color);
+  color: var(--main-title-color);
+}
+
+.portfolio-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--main-title-color);
+}
+.portfolio-web,
+.portfolio-design,
+.portfolio-app,
+.portfolio-marketing {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--text-color);
+}
+.portfolio-about {
+  font-size: 18px;
+  line-height: 1.56;
+  /* Добавляем фон временно для видимости текста */
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--main-write-color);
+}
+/*                                             Подвал сайта */
+/* Добавляем фон для видимости текста */
+.footer {
+  background-color: #2f303a;
+}
+.white-studio {
+  color: var(--main-write-color);
+}
+
+.address-link {
+  line-height: 1.71;
+  color: var(--main-write-color);
+}
+
+.address-mail,
+.address-tel {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-join {
+  line-height: 1.14;
+  color: var(--main-write-color);
+  text-transform: uppercase;
+}
+
+.accent-link:hover,
+.accent-link:focus {
+  color: var(--hover-color);
+}
