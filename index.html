@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="nav">
           <a class="logo link" href="./index.html" lang="en"
@@ -167,7 +167,7 @@
               />
               <h3 class="team-name">Николай Кучеренко</h3>
               <p class="team-position" lang="en">Product Designer</p>
-              <ul class="name-list list">
+              <ul class="name-social-list list">
                 <li>
                   <a href="" target="_blank" aria-label="иконка инстаграма"></a>
                 </li>
@@ -191,18 +191,52 @@
               />
               <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-position" lang="en">Frontend Developer</p>
-              <ul class="name-list list">
-                <li>
-                  <a href="" target="_blank" aria-label="иконка инстаграма"></a>
+              <!-- Сделано временно для визуализации иконки соц.сетей -->
+              <ul class="name-social-list list">
+                <li class="name-social-item">
+                  <a
+                    class="link"
+                    href=""
+                    target="_blank"
+                    aria-label="иконка инстаграма"
+                    ><img
+                      src="./images/social-icon/instagram.svg"
+                      alt="иконка инстаграма"
+                    />
+                  </a>
                 </li>
-                <li>
-                  <a href="" target="_blank" aria-label="иконка твитера"></a>
+                <li class="name-social-item">
+                  <a
+                    class="link"
+                    href=""
+                    target="_blank"
+                    aria-label="иконка твитера"
+                    ><img
+                      src="./images/social-icon/twitter.svg"
+                      alt="иконка твитера"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" target="_blank" aria-label="иконка фейсбука"></a>
+                <li class="name-social-item">
+                  <a
+                    class="link"
+                    href=""
+                    target="_blank"
+                    aria-label="иконка фейсбука"
+                    ><img
+                      src="./images/social-icon/facebook.svg"
+                      alt="иконка фейсбука"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" target="_blank" aria-label="иконка ликедина"></a>
+                <li class="name-social-item">
+                  <a
+                    class="link"
+                    href=""
+                    target="_blank"
+                    aria-label="иконка ликедина"
+                    ><img
+                      src="./images/social-icon/linkedin.svg"
+                      alt="иконка ликедина"
+                  /></a>
                 </li>
               </ul>
             </li>
@@ -215,7 +249,7 @@
               />
               <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-position" lang="en">Marketing</p>
-              <ul class="name-list list">
+              <ul class="name-social-list list">
                 <li>
                   <a href="" target="_blank" aria-label="иконка инстаграма"></a>
                 </li>
@@ -240,7 +274,7 @@
               />
               <h3 class="team-name">Иван Николаев</h3>
               <p class="team-position" lang="en">UI Designer</p>
-              <ul class="name-list list">
+              <ul class="name-social-list list">
                 <li>
                   <a href="" target="_blank" aria-label="иконка инстаграма"></a>
                 </li>
@@ -310,46 +344,48 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <!-- Контакты, div для дальнейшей стилизации-->
-      <div>
-        <a class="logo link" href="./index.html" lang="en"
-          ><span class="logo-web">Web</span>
-          <span class="white-studio">Studio</span></a
-        >
-        <address class="address">
-          <a
-            class="address-link accent-link link"
-            href="https://goo.gl/maps/9TEdyr7UyNeiwYUK7"
-            target="_blank"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          ><br />
-          <a
-            class="address-mail accent-link link"
-            href="mailto:info@example.com"
-            >info@example.com</a
-          ><br />
-          <a class="address-tel accent-link link" href="tel:+380991111111"
-            >+38 099 111 11 11</a
+      <div class="container">
+        <!-- Контакты, div для дальнейшей стилизации-->
+        <div class="footer-box">
+          <a class="logo link" href="./index.html" lang="en"
+            ><span class="logo-web">Web</span>
+            <span class="white-studio">Studio</span></a
           >
-        </address>
-      </div>
-      <!-- Социальные сети, div для дальнейшей стилизации -->
-      <div>
-        <b class="footer-join">присоединяйтесь</b>
-        <ul class="list">
-          <li>
-            <a href="" target="_blank" aria-label="иконка инстаграма"></a>
-          </li>
-          <li>
-            <a href="" target="_blank" aria-label="иконка твитера"></a>
-          </li>
-          <li>
-            <a href="" target="_blank" aria-label="иконка фейсбука"></a>
-          </li>
-          <li>
-            <a href="" target="_blank" aria-label="иконка ликедина"></a>
-          </li>
-        </ul>
+          <address class="address">
+            <a
+              class="address-link accent-link link"
+              href="https://goo.gl/maps/9TEdyr7UyNeiwYUK7"
+              target="_blank"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            ><br />
+            <a
+              class="address-mail accent-link link"
+              href="mailto:info@example.com"
+              >info@example.com</a
+            ><br />
+            <a class="address-tel accent-link link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+        </div>
+        <!-- Социальные сети, div для дальнейшей стилизации -->
+        <div class="footer-box">
+          <b class="footer-join">присоединяйтесь</b>
+          <ul class="footer-social-icon list">
+            <li>
+              <a href="" target="_blank" aria-label="иконка инстаграма"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" aria-label="иконка твитера"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" aria-label="иконка фейсбука"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" aria-label="иконка ликедина"></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
