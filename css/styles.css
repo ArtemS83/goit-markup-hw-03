@@ -46,9 +46,13 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* Линия и фон для видимости */
-  outline: 1px solid red;
+  /* Линия и фон для проверки */
+  /* outline: 1px solid red; */
   /* background-color: yellowgreen; */
+}
+.section {
+  /* Фон для проверки */
+  /* background-color: teal; */
 }
 /*                                       Шапка сайта */
 
@@ -187,7 +191,7 @@ img {
   padding-left: 100px;
   background-color: var(--background-color);
 }
-.about .container {
+.about {
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -201,7 +205,7 @@ img {
 .about-item {
 }
 /* Чем занимаемся секция */
-.offer .container {
+.offer {
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -239,7 +243,7 @@ img {
 .team {
   background-color: var(--background-color);
 }
-.team .container {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -302,12 +306,39 @@ img {
   background-color: var(--background-color);
 }
 /* Секция Постоянные клиенты */
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .customers-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-/*                                  Секция Портфолио */
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: var(--main-background-color);
+}
+.customers-item:hover,
+.customers-item:focus {
+  border-color: var(--hover-color);
+}
+
+/*                                Секция Портфолио */
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--hover-color);
@@ -356,6 +387,8 @@ img {
 /* Добавляем фон для видимости текста */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .white-studio {
   color: var(--main-write-color);
@@ -387,8 +420,7 @@ img {
 }
 .footer .container {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
   align-items: baseline;
 }
 .footer .logo {
