@@ -450,7 +450,7 @@ img {
 .portfolio-link {
   display: block;
   width: 370px;
-  border: 1px solid red;
+  border: 1px solid #eeeeee;
 }
 /* Кроме каждого третьего */
 .portfolio-item:not(:nth-child(3n)) {
